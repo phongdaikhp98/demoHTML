@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+#logo
+{
+	padding: 20px 0 0 30px;
+}
+
+#doanNho
+{
+	padding-left:40px;
+	width:690px;
+	height:110px;
+}
+
+body
+{
+	background-color:#787878;
+	color:#616161;
+	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial,
+Helvetica, Verdana, sans-serif;
+	font-size: 0.875em;
+	margin-top: 20px;
+}
+
+#image
+{
+	margin-left:20px;
+}
+
+#menu ul li a
+{
+	width:120px;
+	float:left;
+	height:40px;
+	color:#fff;
+	text-align:center;
+	padding-top:15px;
+	border-right:1px solid #600;
+	position:relative;
+	z-index:1;
+	bottom:17px;
+	text-decoration:none;
+}
+#menu ul li
+{
+	display:inline;
+}
+#menu ul li a:hover
+{
+	opacity:0.5;
+}
+#menu
+{
+	background-color:#8C0209;
+	padding-top:2px;
+	width:100%;
+	height:50px;
+	border-bottom-right-radius:20px;
+	border-top-left-radius:20px;
+	
+}
+#menu table
+{
+	position:relative;
+	bottom:4px;
+	left:15px;
+}
+.subsidebar
+{
+	margin-top:-7px;
+	right:3px;
+	position:relative;
+	
+}
+iframe
+{
+	margin-right:10px;
+	width:244px;
+}
+
+
+.dshinh table tr td a img
+{
+	width:180px;
+	height:220px;
+}
+
+.dshinh
+{
+	padding-left: 7px;
+}
+
+a
+{
+	color:#c03;
+	text-decoration:none;
+}
+
+#subFooter
+{
+	padding: 20px 0 0 10px;
+}
+#footer
+{
+	border-bottom-right-radius: 25px;
+}

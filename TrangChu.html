@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shop Thiên Thanh</title>
+<link rel="stylesheet" type="text/css" href="Untitled-4.css"/>
+<script type="text/javascript" >    
+				function xlDangNhap(ten, mkhau)    {        
+					if (ten.toLowerCase()=="thienthanh")            
+					if (mkhau=="abc")                
+						alert('Đăng nhập thành công');            
+					else                
+						alert('Sai mật khẩu');         
+					else            
+					alert('Không có user này');    } 
+				function xlTim2(gTri, e) {    
+					var chuoi ="thiên thanh,shop,thời trang,giầy dép,quần áo,mắt kính";    
+					var chuoitim  = gTri.trim().toLowerCase();    
+					if (e.keyCode==13) {   
+						if (chuoi.indexOf(chuoitim)>=0)    alert('Tìm thấy');     
+						else    alert('Không tìm thấy');  
+						} 
+					}
+</script>
+<script type="text/javascript">    $(function() {        
+$("#datepicker").datepicker($.datepicker.regional[ "vi" ]);     });    </script> 
+</head>
+<style>
+	#login{
+		float: right;
+		width:45%;
+		padding-top:15px;
+		padding-right:15px;
+	}
+	#label{
+		padding-top:25px;
+		width:532px;
+		float:left;	
+	}
+</style>
+<script type="text/javascript" >    
+		function xlDangNhap(ten, mkhau)    {        
+		if (ten.toLowerCase()=="thienthanh")            
+		if (mkhau=="abc")                alert('Đăng nhập thành công');            
+			else                alert('Sai mật khẩu');         
+			else            alert('Không có user này');    } 
+</script> 
+<body>
+<!-- start header -->
+<header>
+	<div id="logo">
+        <h1 style="text-shadow:3px 3px 3px #b9a698;padding:25px 0 0 0;font-size: 40px;margin:0;position:relative;right:80px;width:600px">
+        <a href="#">
+        <img src="images/Logo.gif">
+        <span style="color:#000000;">Shop</span>
+        <span style="color:#8C0209">Thiên Thanh</span> <span style="font-size:13px;position:relative;top:-2px">THỜI TRANG NAM NỮ</span>
+        </a>
+        </h1>
+        <div id="headForm">
+        	<table>
+            	<tr>
+                	<td align="right">Tên</td>
+                    <td><input type="text" name="Ten" id="Ten" style="width:120px"/></td>
+                    <td style="width:50px;">Mật khẩu</td>
+                    <td><input type="password" name="Matkhau" id="Matkhau" style="width:90px"/></td>
+                    <td><input type="image" src="images/Login.jpg" id="login" title="Đang nhap" style="width:"
+onclick = "xlDangNhap(Ten.value, Matkhau.value)"></td>
+                </tr>
+                <tr>
+                	<td colspan="5"><a href="DangKy.html" style="float:right"><img src="images/DangKy.gif"/></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+<!-- start menu -->
+<section id="menuContaniner">
+	<div id="menu" >
+        <ul>
+        	<li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Quần áo nữ</a></li>
+            <li><a href="#">Quần áo nam</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Sự kiện</a></li>
+            <li><a href="#" style="font-size:13px"><img src="images/Email.gif"/>&nbsp;&nbsp;Liên hệ</a></li>
+            <li style="border-right:none">
+            	<table>
+                    <tr>
+                    <td><input type="text" style="border: 1px solid #CA8186;font-style: italic; color:#787878;height: 20px;width: 160px" value="&nbsp;Tên sản phẩm" onfocus="if(value=='Tên sản phẩm'){value=''}" onblur="if(value=='') {value='Tên sản phẩm'}"  onkeypress="xlTim2(this.value, window.event);" /></td>
+                    <td><input type="image" id="btnTim" title="Tìm sản phẩm" src="images/Search2.png" style="border: none;" onclick="xlTim(txtTim.value)"/></td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+	</div>
+</section>
+<!-- end menu -->
+<!-- start content Page -->
+<section id="mainContainer">
+	<aside id="sidebar">
+    	<div class="subsidebar"> <!—Mục 1 -->
+            <iframe src="SanPhamMoi.html" height="450px" scrolling="no" style="border: none; ">
+    		</iframe>
+		</div>
+    
+    	<div class="subsidebar" style="margin-top:30px;"> <!—Mục 2 -->
+            <iframe src="HoTroTrucTuyen.html" height="280px" scrolling="no" style="border: none">
+			</iframe>
+   		</div>
+    
+    	<div class="subsidebar" style="margin-top:20px"> <!—Mục 3 -->
+    		<iframe src="ThongKe.html" height="150px"scrolling="no" style="border: none">
+			</iframe>
+    	</div>
+    </aside>
+    <!-- start content -->
+    <section id="maincontent">
+    	<div id="image"> 
+            <!-- Start WOWSlider.com BODY section -->
+            <div id="wowslider-container1">
+            <div class="ws_images"><ul>
+                    <li><img src="data1/images/6358945768897863682047180225_aptopixfashiontheyskenstheoryfall2012backstage.jpg" alt="" title="" id="wows1_0"/></li>
+                    <li><a href="#"><img src="data1/images/fashionbeautytips.jpg" alt="wow slider" title="" id="wows1_1"/></a></li>
+                    <li><img src="data1/images/tuvungtienganhchudethoitrangfashion1.jpg" alt="" title="" id="wows1_2"/></li>
+                </ul></div>
+                <div class="ws_bullets"><div>
+                    <a href="#" title=""><span><img src="data1/tooltips/6358945768897863682047180225_aptopixfashiontheyskenstheoryfall2012backstage.jpg" alt=""/>1</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/fashionbeautytips.jpg" alt=""/>2</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/tuvungtienganhchudethoitrangfashion1.jpg" alt=""/>3</span></a>
+                </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+            <div class="ws_shadow"></div>
+            </div>	
+            <script type="text/javascript" src="engine1/wowslider.js"></script>
+            <script type="text/javascript" src="engine1/script.js"></script>
+            <!-- End WOWSlider.com BODY section -->		
+		</div>  <!-- banner quảng cáo công ty -->
+        <div class="contentItem">
+	            &loz; Thời trang cực hot !!! 
+        </div> <!-- Thời trang hot -->
+        <div id="imgQuangCao"> 
+            <img src="images/fashion-banner-5.gif" style="width:730px;height:220px;" />
+        </div><!—mục 3 -->
+    
+        <article id="article" >
+            <span style="color:#8C0209; font-size:30px;width:730px;height:80px">Chào mừng bạn đến với shop quần áo rẻ đẹp!</span><br /><br />
+            <span style="color:#8C0209; font-size:19px; margin-left:1px;">Hãy thỏa sức shopping online cùng shop quần áo rẻ đẹp nhé </span><br /><br />
+            <div id="doanNho">
+         Để chuẩn bị cho một ngày mới năng động và hiệu quả, bạn không thể lơ là
+        trong việc chọn lựa cho mình một bộ cánh tươm tất và thật xinh xắn. Diện cho mình những
+        bộ áo quần hợp thời trang, vừa thanh lịch lại vừa rất trẻ trung, duyên dáng, sành điệu… đó
+        chính là điều mà
+        Shop <b>Thiên Thanh</b> muốn giới thiệu với các bạn.
+        	</span>
+        <span style="color:#8C0209;float:right; height:10px;padding-right:10px;padding-bottom:15px; font-size:13px"><a href="#"><b>&laquo; &laquo; Xem chi tiết &raquo; &raquo;</b></a></span>
+         	</div>   
+        </article> <!-- Bài viết -->
+        <div class="contentItem">
+            &loz; Thời trang nam
+        </div> <!-- Thời trang nam -->
+        <div class="dshinh" > 
+            <table cellpadding="2" cellspacing="0px">
+                <tr>
+                    <td valign="top"><a href="ChiTietSP.html"><img src="images/Nam_01.jpg"/>Quần kiểu lạ Men 10</a><br /><input type="image" src="images/cart2.png" style="border: none;"/>&nbsp;300,000</td>
+                    <td><a href="ChiTietSP.html"><img src="images/Nam_02.jpg"/>Áo sơmi body MS 01</a><br /><input type="image" src="images/cart2.png" style="border: none;"/>&nbsp;350,000</td>
+                    <td><a href="ChiTietSP.html"><img src="images/Nam_03.jpg"/>Áo sơmi body MS 09</a><br /><input type="image" src="images/cart2.png" style="border: none;"/>&nbsp;450,000</td>
+                    <td><a href="ChiTietSP.html"><img src="images/Nam_04.jpg"/> Quần nam Rock & Republic</a><br /><input type="image" src="images/cart2.png" style="border: none;"/>&nbsp;1,300,000</td>
+                </tr>
+        
+                <tr>
+                    <td valign="top"><a href="ChiTietSP.html"><img src="images/Nam_05.jpg"/>Áo kiểu lạ Men 10</a><br /><input type="image" src="images/cart2.png" style="border: none;"/>&nbsp;250,000</td>
+                    <td><a href="ChiTietSP.html"><img src="images/Nam_06.jpg"/>Áo sơmi body MS 03</a><br /><input type="image" src="images/cart2.png" style="border: none;"/>&nbsp;300,000</td>
+                    <td><a href="ChiTietSP.html"><img src="images/Nam_07.jpg"/>Quần kaki nam MS 01</a><br /><input type="image" src="images/cart2.png" style="border: none;"/>&nbsp;700,000</td>
+                    <td><a href="ChiTietSP.html"><img src="images/Nam_08.jpg"/> Quần đùi, short MS 01</a><br /><input type="image" src="images/cart2.png" style="border: none;"/>&nbsp;500,000</td>
+                </tr>
+    		</table>
+		</div>
+    </section>
+    <!-- end content -->
+    <div style="clear:both;">&nbsp;</div>
+</section>
+<!-- end page -->
+
+<footer id="footer" >
+	<div id="subFooter">&copy; 2017 All Rights Reserved  &bull; Design by <a href="http://www.alphatek.co.uk/">Alphatek Company</a>
+    <a href="http://www.youtube.com/hoclaptrinh"><img src="images/youTube.png" style="float:right"/></a><a href="https://www.facebook.com/hoiyeuthichlaptrinh"><img src="images/facebook.png" style="float:right"/></a>
+    </div>
+</footer>
+</body>
+</html>

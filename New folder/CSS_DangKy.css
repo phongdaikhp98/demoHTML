@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#menuContaniner {
+    width: 990px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 0px solid #8C0209;
+    padding: 0px 5px 0px 5px;
+}
+#mainContainer {
+    width: 990px;
+    margin: 0 auto;
+    background-color: white;
+    border: 0px solid #8C0209;
+    padding: 20px 5px 0px 5px
+}
+#maincontent {
+    float: left;
+    width: 510px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px
+}
+#sidebar1 {
+    width: 220px;
+    font-size: 12px;
+    float: left;
+    background-color: white
+}
+#sidebar2 {
+	float:right;
+    width: 210px;
+    font-size: 12px;
+    /*float: left;*/
+    background-color: white
+}
+.subsidebar {
+    width: 220px;
+    padding-bottom: 10px;
+}
+.submain {
+    width: 500px;
+    padding-bottom: 10px;
+    background-image: url(img/12809022-decoratif-ornement-fleurs.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.menu_bg ul {
+    list-style-type: none;
+    text-align: right;
+	height: 50px; 
+	padding-left:40px;	
+}
+.menu_bg li {
+	border-right:1px solid #BCBCBC;
+	float: left;
+	position: relative;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: 50px;
+	padding-top: 5px;
+	background: linear-gradient(#d00618, #6e0001);
+	color:#FFF;
+}
+.menu_bg a {
+	color:#FFF;
+	width: 100px;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+	font-weight: bold; 
+	text-decoration:none;
+}
+
+.menu_bg li:hover {
+    display: block;
+	color:#F00;
+	background: #999;
+}
+.sub-menuPK{
+	position:absolute;
+	left:-40px;
+	top:50px; /*can*/
+	display:none;
+	}
+#menu li:hover .sub-menuPK {
+    display:block;
+}

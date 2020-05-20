@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="Untitled-4.css"/>
+<title>Shop Thiên Thanh</title>
+<style>
+.button
+{
+	width:75px;
+	height:30px;
+	background-color:#C03; color:#fff;
+	background: -webkit-linear-gradient(#aa0514, #6e0001);
+	background: -o-linear-gradient(#aa0514, #6e0001);
+	background: -moz-linear-gradient(#aa0514, #6e0001);
+	background: linear-gradient(#d00618, #6e0001);
+	border-radius:20px;
+}
+</style>
+<link rel="stylesheet" href="DatePicker/themes/jquery-ui.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" >    
+		function xlDangNhap(ten, mkhau)    {        
+		if (ten.toLowerCase()=="thienthanh")            
+		if (mkhau=="abc")                alert('Đăng nhập thành công');            
+		else                alert('Sai mật khẩu');         
+		else            alert('Không có user này');    } 
+</script>
+<script>
+	function xlDangKy(){
+		//
+		var kq =""; 
+		var phai = $('#gtinh:checked').val();
+		kq = "<b>Xác nhận lại thông tin</b><br /><br/>"; 
+		kq += "<b>Tên đăng nhập:</b> " + $('#dnhap').val() + "<br />";
+		kq += "<b>Mật khẩu:</b> " + $('#mkhau').val() + "<br />"; 
+		kq += "<b>Họ tên:</b> " + $('#hoten').val() + "<br />"; 
+		kq += "<b>Phái:</b> " + ((phai)?"Nam":"Nữ") + "<br />"; 
+		kq += "<b>Ngày sinh:</b> " + $('#datepicker').val() + "<br />"; 
+		kq += "<b>Nghề nghiệp:</b> " + $('#nnghiep option:selected').text()+"<br />"; 
+		kq += "<b>Email:</b> " + $('#email').val() + "<br />"; 
+		kq += "<b>Điện thoại:</b> " + $('#dthoai').val() + "<br />"; 
+		kq += "<b>Ghi chú:</b> " + $('#gchu').val() + "<br />";   
+		
+		//đổi màu của element và xuất ra element ketqua $('#ketqua').css('color','black').html(kq); 
+		$('#moreInfor').css('color', 'black').html(kq);
+		}
+</script>
+</head>
+
+<body>
+
+<div class="wapper">
+<!-- start header -->
+<header>
+	<div id="logo">
+        <h1 style="text-shadow:3px 3px 3px #b9a698;padding:25px 0 0 0;font-size: 40px;margin:0;position:relative;right:80px">
+        <a href="#">
+        <img src="images/Logo.gif">
+        <span style="color:#000000;">Shop</span>
+        <span style="color:#8C0209">Thiên Thanh</span> <span style="font-size:13px;position:relative;top:-2px">THỜI TRANG NAM NỮ</span>
+        </a>
+        </h1>
+    </div>
+</header>
+<!-- end header -->
+<!-- start menu -->
+<section id="menuContaniner">
+	<div id="menu" >
+        <ul>
+        	<li><a href="TrangChu.html"><b>Trang chủ</b></a></li>
+            <li><a href="#"><b>Quần áo nữ</b></a></li>
+            <li><a href="#"><b>Quần áo nam</b></a></li>
+            <li><a href="#"><b>Phụ kiện</b></a></li>
+            <li><a href="#"><b>Tin tức</b></a></li>
+            <li><a href="#"><b>sự kiện</b></a></li>
+            <li><a href="#" style="font-size:13px"><img src="images/Email.gif"/><b>&nbsp;&nbsp;Liên hệ</b></a></li>
+            <li style="border-right:none;">
+            	<table>
+                    <tr>
+                    <td><input type="text" style="border: 1px solid #CA8186;font-style: italic; color:#787878;height: 20px;width: 165px" value="&nbsp;Tên sản phẩm"/></td>
+                    <td><input type="image" id="btnTim" title="Tìm sản phẩm"src="images/Search2.png" style="border: none;"/></td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+	</div>
+</section>
+<!-- end menu -->
+<!-- start content Page -->
+<section id="mainContainer">
+	<div id="sidebar" style="margin-right:4px">
+    	<aside class="subsidebar"> <!—Mục 1 -->
+            <iframe src="SanPhamMoi.html" height="450px"
+    scrolling="no" style="border: none; ">
+    		</iframe>
+		</aside>
+    
+    	<aside class="subsidebar" style="margin-top:30px;"> <!—Mục 2 -->
+            <iframe src="HoTroTrucTuyen.html" height="280px" scrolling="no" style="border: none">
+			</iframe>
+   		</aside>
+    
+    	<aside class="subsidebar" style="margin-top:20px"> <!—Mục 3 -->
+    		<iframe src="ThongKe.html" height="150px"
+scrolling="no" style="border: none">
+			</iframe>
+    	</aside>
+    </div>
+    
+    <div id="formDK" style="width:500px;background-image:url(images/imgBorderRight.png);background-repeat:no-repeat;background-position:top right; float:left;border:1px solid #8C0209;min-height:300px;border-top-left-radius:40px;border-bottom-right-radius:40px;">
+    	<h1 style="font-size:31px;color:#8C0209; margin:0 auto"><br />&nbsp;&nbsp;Đăng ký thành viên mới</h1><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.............................................................................................................................................
+        <div id="formContent" style="width:400px; margin:0 30px">
+        <form action="#" method="post">
+        	<table>
+            	<tr>
+                	<td style="width:150px;text-align:right;">Tên đăng nhập:</td><td ><input type="text" name="dnhap" style="width:250px" id="dnhap"/></td>
+                </tr>
+                <tr>
+                	<td style="width:150px;text-align:right;">Mật khẩu:</td><td ><input type="password" name="mkhau" style="width:250px" id="mkhau"/></td>
+                </tr>
+                <tr>
+                	<td style="width:150px;text-align:right;">Nhập lại mật khẩu:</td><td ><input type="reppass" name="pass" style="width:250px" /></td>
+                </tr>
+                <tr>
+                	<td style="width:150px;text-align:right;">Họ và tên:</td><td ><input type="text" name="hoten" style="width:250px" id="hoten"/></td>
+                </tr>
+                <tr>
+                	<td style="width:150px;text-align:right;">Giới tính:</td><td >
+                    <input type="radio" name="gtinh" value="1" id="gtinh" checked="checked"/>Nam                    
+					<input type="radio" name="gtinh" value="0" id="gtinh"/>Nữ
+                    </td>
+                </tr>
+                <tr>
+                	<td style="width:150px;text-align:right;">Ngày sinh:</td><td id="datepicker"><input type="date" name="datepicker'" style="width:150px" id="datepicker"/></td>
+                </tr>
+                <tr>
+                	<td style="width:150px;text-align:right;">Nghề nghiệp:</td><td >
+                    	<select name="job" size="1" style="width:250px" id="nnghiep ">
+                            <option value="-1" selected="selected">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- - - Chọn trong danh sách - - -</option>
+                            <option value="1">Giáo Viên</option>
+                            <option value="2">Kĩ Sư</option>
+                            <option value="3">Bác sĩ</option>
+                            <option value="4">Programmer</option>
+                    	</select>
+                   	</td>
+                </tr>
+                <tr>
+                	<td style="width:150px;text-align:right;">Email:</td><td ><input type="email" name="email" style="width:250px" id="email"/></td>
+                </tr>
+                 <tr>
+                	<td style="width:150px;text-align:right;">Điện thoại:</td><td ><input type="number" name="dthoai" style="width:250px" id="dthoai"/></td>
+                </tr>
+                <tr>
+                	<td style="width:150px;text-align:right;">Ghi chú:</td><td ><textarea rows="5" cols="33" name="gchu" id="gchu"></textarea></td>
+                </tr>
+                <tr>
+                	<td colspan="2" align="center"><input class="button" type="button" value="Đồng ý" onclick="xlDangKy()"/> <input type="reset" value="reset" class="button" /></td>
+                </tr>
+            </table>
+        </form>
+        <br /><div id="moreInfor"></div>
+        </div>
+    </div>
+    
+    <div id="sidebar2" style="width:240px;float:left; margin-left:2px;">
+    	<aside class="subsidebar" style="margin-top:-11px">
+    		<iframe src="GioHang.html" height="150px"
+scrolling="no" style="border: none">
+			</iframe>
+    	</aside>
+        <aside class="subsidebar" style="margin-top:5px">
+    		<iframe src="TinThoiTrang.html" height="1540px"
+scrolling="no" style="border: none">
+			</iframe>
+    	</aside>
+    </div>
+    <div style="clear:both;">&nbsp;</div>
+</section>    
+<footer id="footer" >
+	<div id="subFooter">&copy; 2017 All Rights Reserved  &bull; Design by <a href="http://www.alphatek.co.uk/">Alphatek Company</a>
+    <a href="http://www.youtube.com/hoclaptrinh"><img src="images/youTube.png" style="float:right"/></a><a href="https://www.facebook.com/hoiyeuthichlaptrinh"><img src="images/facebook.png" style="float:right"/></a>
+    </div>
+</footer>
+</div>
+</body>
+</html>
